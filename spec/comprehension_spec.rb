@@ -214,14 +214,14 @@ describe "GIT" do
 
   it "28. What is the syntax for deleting a branch called 'add-avatar' 
       on the remote 'origin' using the push and colon syntax?" do
-    answer = "?"
+    answer = "git push origin :add-avatar"
     encoded_answer = "7f9e982d2fe3ddabf95d835881a7efd6da387542"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "29. What is the syntax for deleting a remote branch called 'add-img' 
       on the remote 'butterfly' using the push and colon syntax?" do
-    answer = "git push origin :add-avatar"
+    answer = "git push butterfly :add-img"
     encoded_answer = "9e528dd3bf4ed25f25b148bdc947566883ba785b"
     expect(encode(answer)).to eq(encoded_answer)
   end
