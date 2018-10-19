@@ -238,7 +238,7 @@ describe "GIT" do
 
   it "31. If index.html is being tracked and you modify and stage the change,
       what color will it be if you run 'git status'?" do
-    answer = "?"
+    answer = "green"
     encoded_answer = "bc74f4f071a5a33f00ab88a6d6385b5e6638b86c"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -247,7 +247,7 @@ describe "GIT" do
      assuming no one has pushed to your remote since you cloned it, will 'git status' say
      you're ahead or behind origin/master?" do
     # "ahead" or "behind" or "ahead and behind"
-    answer = "?"
+    answer = "ahead"
     encoded_answer = "a7481340412e5d73e6c5c8de4ef9285b85502d5a"
     expect(encode(answer)).to eq(encoded_answer)
   end
